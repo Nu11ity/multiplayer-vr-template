@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7809976453179806194}
   - component: {fileID: 6139757374080177017}
   - component: {fileID: 468562570487032852}
+  - component: {fileID: 7392197285071686098}
   m_Layer: 0
   m_Name: Generic VR Player
   m_TagString: Untagged
@@ -51,8 +52,9 @@ MonoBehaviour:
   prefixField: -1
   Synchronization: 3
   OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents: []
+  observableSearch: 0
+  ObservedComponents:
+  - {fileID: 7392197285071686098}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -71,6 +73,24 @@ MonoBehaviour:
   localXRRigGameobject: {fileID: 7107553375834325844}
   avatarHeadGameobject: {fileID: 113595885800775508}
   avatarBodyGameobject: {fileID: 5186374023610007959}
+--- !u!114 &7392197285071686098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138498351869518784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 729bce9dc90272342a27885d125bdc2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generalVRPlayerTransform: {fileID: 7809976453179806194}
+  mainAvatarTransform: {fileID: 238497773453375255}
+  headTransform: {fileID: 390641915541391715}
+  bodyTransform: {fileID: 5554790043289694694}
+  leftHandTransform: {fileID: 2462579894483181595}
+  rightHandTransform: {fileID: 1283994281901459264}
 --- !u!1 &534049312698892316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,7 +1688,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1847
+    m_Bits: 3895
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -2332,11 +2352,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 089d38c2beff1f044b446797593d7269, type: 3}
---- !u!4 &238497773453375255 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 355517853944651810, guid: 089d38c2beff1f044b446797593d7269, type: 3}
-  m_PrefabInstance: {fileID: 549542426386552629}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5186374023610007959 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4636999383082096290, guid: 089d38c2beff1f044b446797593d7269, type: 3}
@@ -2365,6 +2380,11 @@ GameObject:
 --- !u!4 &390641915541391715 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 201407631523307094, guid: 089d38c2beff1f044b446797593d7269, type: 3}
+  m_PrefabInstance: {fileID: 549542426386552629}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &238497773453375255 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 355517853944651810, guid: 089d38c2beff1f044b446797593d7269, type: 3}
   m_PrefabInstance: {fileID: 549542426386552629}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3845096765454879112
@@ -2488,6 +2508,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c95e6a7a9953894fac7be7e2922c859, type: 3}
+--- !u!1 &4158254050977812165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 930434389981890381, guid: 3c95e6a7a9953894fac7be7e2922c859, type: 3}
+  m_PrefabInstance: {fileID: 3845096765454879112}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &4158254050977812216 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 930434389981890416, guid: 3c95e6a7a9953894fac7be7e2922c859, type: 3}
@@ -2496,10 +2521,5 @@ RectTransform:
 --- !u!1 &7502340652584995941 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6719700711245612525, guid: 3c95e6a7a9953894fac7be7e2922c859, type: 3}
-  m_PrefabInstance: {fileID: 3845096765454879112}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4158254050977812165 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 930434389981890381, guid: 3c95e6a7a9953894fac7be7e2922c859, type: 3}
   m_PrefabInstance: {fileID: 3845096765454879112}
   m_PrefabAsset: {fileID: 0}
